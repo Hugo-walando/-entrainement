@@ -1,0 +1,6 @@
+<%= @hotel.name %>
+<%= @hotel.description %>
+<% @hotel.rooms.each do |room| %>
+<%= link_to room.id, hotel_room_path(@hotel, room) %>
+
+<% end %>
